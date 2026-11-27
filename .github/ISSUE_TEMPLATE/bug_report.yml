@@ -1,0 +1,45 @@
+name: Bug report
+description: Something is broken or behaves unexpectedly
+title: "[bug] "
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What went wrong, in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: matrix
+    attributes:
+      label: Scenario / repro matrix
+      description: List the cases you tried. Add rows as needed. A single path is fine if that is all you have.
+      value: |
+        | Step / input | Conditions | Expected | Actual |
+        | --- | --- | --- | --- |
+        |  |  |  |  |
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: App versionName / versionCode, commit, or release tag if you know it.
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Device or OS, and anything else needed to reproduce.
+      placeholder: e.g. Pixel 8, Android 15
